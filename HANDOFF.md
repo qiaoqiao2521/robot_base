@@ -6,7 +6,7 @@
 
 ## 1. 仓库当前状态
 
-- 远端：https://github.com/muqiao215/robot_base （public，默认分支 `main`）
+- 远端：https://github.com/qiaoqiao2521/robot_base （public，默认分支 `main`）
 - 最新提交：`8a27a1e` — nav2: use fast path-invalid-recovery BT, simplify global costmap, add footprint
 - 平台：ROS 2 Jazzy / Python 3.12 / Ubuntu 24.04（Raspberry Pi）
 - 仓库结构：`robot_base/`（ROS 2 包）、`map/`（示例栅格地图）、`docs/frames/`（TF 快照）
@@ -75,7 +75,8 @@ wz = -(m3 + m4 - m1 - m2) / (self.wheel_base * 2.5)   # 分母 *2.5 不是标准
 
 ## 6. pi 端操作备忘（非机密）
 
-- `gh` 已登录 `muqiao215`；从 pi 访问 GitHub **必须走代理** `http://127.0.0.1:2080`（sing-box；出口 IP 见本地 `/tmp/raspi-new-handoff.md`，直连被墙）。
+- 2026-10-15 账号迁移后，默认 GitHub 账号为 `qiaoqiao2521`；操作前用 `gh api user --jq .login` 核对。旧 `muqiao215` 登录记录仅作历史参考。
+- 下述 pi 代理配置为历史现场记录，使用前重新核实：`http://127.0.0.1:2080`（sing-box；出口 IP 见本地 `/tmp/raspi-new-handoff.md`）。
 - pi 全局 `~/.gitconfig` 有一条 `insteadOf`：`https://github.com/` → `https://gitclone.com/github.com/`（只读镜像）。**push 时必须绕过**，否则 504：
   ```bash
   export https_proxy=http://127.0.0.1:2080

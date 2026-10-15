@@ -4,7 +4,7 @@
   <name>robot_base</name>
   <version>0.1.0</version>
   <description>Mecanum-wheel robot base driver for ROS 2: cmd_vel to PWM, wheel-speed feedback odometry and TF.</description>
-  <maintainer email="muqiao215@users.noreply.github.com">muqiao215</maintainer>
+  <maintainer email="qiaoqiao2521@users.noreply.github.com">qiaoqiao2521</maintainer>
   <license>Apache License 2.0</license>
 
   <depend>rclpy</depend>

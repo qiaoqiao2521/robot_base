@@ -37,7 +37,7 @@ Developed on ROS 2 Jazzy / Python 3.12 / Ubuntu 24.04 (Raspberry Pi).
 ```bash
 # inside a colcon workspace src/
 cd <ws>/src
-git clone https://github.com/muqiao215/robot_base.git
+git clone https://github.com/qiaoqiao2521/robot_base.git
 cd <ws>
 rosdep install --from-paths src --ignore-src -r -y
 colcon build --packages-select robot_base
